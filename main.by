@@ -1,0 +1,11 @@
+# كود حساب أداء الطائرة - للمهندسة صفا
+print("--- Aircraft Performance Calculator ---")
+weight = float(input("Enter aircraft weight (in kg): "))
+speed = float(input("Enter aircraft speed (in m/s): "))
+
+# معادلة تقريبية لحساب قوة الرفع ومقاومة الهواء
+lift_force = 0.5 * 1.2 * (speed ** 2) * 25 * 0.5
+drag_force = lift_force * 0.05
+
+print(f"Calculated Lift Force: {lift_force:.2f} Newtons")
+print(f"Calculated Drag Force: {drag_force:.2f} Newtons")
